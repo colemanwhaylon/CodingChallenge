@@ -1,32 +1,94 @@
-# Prerequisites
-*.d
+# Ignore Visual Studio and JetBrains Rider files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.iml
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# Build artifacts
+bin/
+obj/
+out/
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
+*.pdb
+*.log
+*.cache
+*.config
+*.csproj.user
+*.csproj.nuget.dgspec.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# ASP.NET Core files
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+appsettings.Local.json
+appsettings.Test.json
+appsettings.*.json
+secrets.json
+
+# Entity Framework migrations and local database files
+Migrations/
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+# Rider / ReSharper files
+*.sln.DotSettings
+*.sln.DotSettings.user
+resharper.xml
+resharper-folder.xml
+
+# Ignore dependency cache
+packages/
+node_modules/
+wwwroot/lib/
+wwwroot/dist/
+
+# Ignore test and coverage reports
+TestResults/
+coverage/
+coverage.cobertura.xml
+coverage.opencover.xml
+lcov-report/
+*.coverage
+*.testlog
+
+# Ignore temporary files and logs
+logs/
+*.log
+*.bak
+*.swp
+*.lock
+.DS_Store
+Thumbs.db
+.vs
+
+# Ignore Docker-related files
+docker-compose.override.yml
+.dockerignore
+docker-compose.yml
+*.dockerfile
+**/Dockerfile
+
+# Ignore NuGet-related files
+.nuget/
+.nuget/packages/
+global.json
+project.lock.json
+packages.lock.json
+
+# Ignore VS Code workspace settings
+.vscode/
+
+# Ignore IDE specific files
+*.suo
+*.ntvs*
+*.njsproj
+*.tfignore
+*.tsbuildinfo
