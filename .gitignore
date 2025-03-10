@@ -70,11 +70,11 @@ Thumbs.db
 .vs
 
 # Ignore Docker-related files
-docker-compose.override.yml
-.dockerignore
-docker-compose.yml
-*.dockerfile
-**/Dockerfile
+#docker-compose.override.yml
+#.dockerignore
+#docker-compose.yml
+#*.dockerfile
+#**/Dockerfile
 
 # Ignore NuGet-related files
 .nuget/
